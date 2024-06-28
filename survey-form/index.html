@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">jonnelDev Survey Form</h1>
+    <p id="description">Hi! Thank you for your time, this survey can help me become a better dev.</p>
+    
+    <form id="survey-form">
+      <label id="name-label" for="name">Name
+        <input 
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required />
+      </label>
+      
+      <label id="email-label" for="email">Email
+        <input 
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required />
+      </label>
+      
+      <label id="number-label" for="number">Age
+        <input 
+          type="number"
+          name="age"
+          id="number"
+          min="21"
+          max="60"
+          placeholder="Enter your age"
+          required />
+      </label>
+      
+      <label for="dropdown">Your role</label>
+      <select id="dropdown" name="role">
+        <option value="">(select one)</option>
+        <option value="frontend">Frontend Developer</option>
+        <option value="backend">Backend Developer</option>
+        <option value="fullstack">Fullstack Developer</option>
+      </select>
+      
+      <fieldset>
+        <legend>Your favorite programming language</legend>
+        <label>
+          <input type="radio" name="language" value="javascript" class="inline" required />
+          JavaScript
+        </label>
+        <label>
+          <input type="radio" name="language" value="python" class="inline" required />
+          Python
+        </label>
+        <label>
+          <input type="radio" name="language" value="java" class="inline" required />
+          Java
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Preferred technologies</legend>
+        <label>
+          <input type="checkbox" name="tech" value="html" class="inline" />
+          HTML
+        </label>
+        <label>
+          <input type="checkbox" name="tech" value="css" class="inline" />
+          CSS
+        </label>
+        <label>
+          <input type="checkbox" name="tech" value="js" class="inline" />
+          JavaScript
+        </label>
+        <label>
+          <input type="checkbox" name="tech" value="react" class="inline" />
+          React
+        </label>
+        <label>
+          <input type="checkbox" name="tech" value="angular" class="inline" />
+          Angular
+        </label>
+        <label>
+          <input type="checkbox" name="tech" value="vue" class="inline" />
+          Vue.js
+        </label>
+        <label>
+          <input type="checkbox" name="tech" value="node" class="inline" />
+          Node.js
+        </label>
+        <label>
+          <input type="checkbox" name="tech" value="express" class="inline" />
+          Express
+        </label>
+        <label>
+          <input type="checkbox" name="tech" value="django" class="inline" />
+          Django
+        </label>
+        <label>
+          <input type="checkbox" name="tech" value="flask" class="inline" />
+          Flask
+        </label>
+      </fieldset>
+      
+      <label for="comments">Any comments or suggestions</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+      
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
