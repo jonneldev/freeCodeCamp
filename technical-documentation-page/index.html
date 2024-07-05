@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>JavaScript Fundamentals Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>JavaScript Fundamentals</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#Control_Structures">Control Structures</a></li>
+            <li><a class="nav-link" href="#Objects">Objects</a></li>
+            <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+            <li><a class="nav-link" href="#Best_Practices">Best Practices</a></li>
+            <li><a class="nav-link" href="#Resources">Resources</a></li>
+            <li><a class="nav-link" href="#Examples">Examples</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>JavaScript is a high-level, dynamic, untyped, and interpreted programming language. It is a core technology of the web, alongside HTML and CSS, and allows you to create interactive and dynamic web content.</p>
+            <p>JavaScript can be used to manipulate the DOM, handle events, make network requests, and more. This documentation covers the fundamentals to help you get started with JavaScript programming.</p>
+            <p>Understanding JavaScript is essential for modern web development and enhances your ability to create functional and interactive web applications.</p>
+            <p>In this guide, you will learn about basic concepts such as variables, data types, functions, and control structures.</p>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>Variables in JavaScript are containers for storing data values. You can declare a variable using <code>var</code>, <code>let</code>, or <code>const</code>. Here’s how you can declare variables:</p>
+            <pre><code>var name = 'John';   // var is function-scoped
+let age = 30;         // let is block-scoped
+const birthYear = 1991;  // const is block-scoped and read-only</code></pre>
+            <p>Use <code>let</code> for variables that will change and <code>const</code> for variables that won’t.</p>
+            <p>Variables are fundamental in JavaScript and are used to store data values for use in programs.</p>
+            <p>Understanding variable scopes and lifetimes is crucial for effective programming.</p>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <p>JavaScript has several data types including:</p>
+            <ul>
+                <li><span class="highlight">String:</span> Represents a sequence of characters, e.g., <code>'Hello'</code></li>
+                <li><span class="highlight">Number:</span> Represents numeric values, e.g., <code>100</code>, <code>3.14</code></li>
+                <li><span class="highlight">Boolean:</span> Represents true or false values, e.g., <code>true</code>, <code>false</code></li>
+                <li><span class="highlight">Object:</span> Represents a collection of key-value pairs, e.g., <code>{name: 'John', age: 30}</code></li>
+                <li><span class="highlight">Array:</span> Represents a list-like collection of values, e.g., <code>[1, 2, 3]</code></li>
+                <li><span class="highlight">Null:</span> Represents the absence of value, e.g., <code>null</code></li>
+                <li><span class="highlight">Undefined:</span> Represents a variable that has been declared but not assigned a value, e.g., <code>undefined</code></li>
+            </ul>
+            <p>Each data type has specific characteristics and methods for manipulation in JavaScript.</p>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions are blocks of code designed to perform a particular task. You can define a function using the <code>function</code> keyword:</p>
+            <pre><code>function greet(name) {
+    return 'Hello, ' + name;
+}
+console.log(greet('Alice')); // Outputs: Hello, Alice</code></pre>
+            <p>Functions can take parameters and return values. They help to organize code and make it reusable.</p>
+            <p>Functions are essential for creating reusable code and implementing functionality in your JavaScript programs.</p>
+            <p>Understanding function scopes, closures, and callbacks will enhance your JavaScript skills.</p>
+        </section>
+        <section class="main-section" id="Control_Structures">
+            <header>Control Structures</header>
+            <p>Control structures allow you to control the flow of your program. Common control structures include:</p>
+            <ul>
+                <li><span class="highlight">Conditional Statements:</span> Execute code based on conditions, e.g., <code>if</code>, <code>else</code>, <code>switch</code></li>
+                <pre><code>if (age >= 18) {
+    console.log('You are an adult.');
+} else {
+    console.log('You are a minor.');
+}</code></pre>
+                <li><span class="highlight">Loops:</span> Repeat code a certain number of times, e.g., <code>for</code>, <code>while</code></li>
+                <pre><code>for (let i = 0; i < 5; i++) {
+    console.log(i);
+}</code></pre>
+            </ul>
+            <p>Control structures are fundamental for making decisions and repeating tasks in your code.</p>
+            <p>Mastering control structures will improve your problem-solving skills in JavaScript programming.</p>
+        </section>
+        <section class="main-section" id="Objects">
+            <header>Objects</header>
+            <p>Objects are collections of properties and methods. They are used to model real-world entities:</p>
+            <pre><code>const person = {
+    name: 'John',
+    age: 30,
+    greet() {
+        console.log('Hello!');
+    }
+};
+person.greet(); // Outputs: Hello!</code></pre>
+            <p>Objects are a key part of JavaScript and are used to structure and manage data.</p>
+            <p>Learning to work with objects is crucial for building complex applications.</p>
+            <p>Explore object methods and prototype inheritance for advanced JavaScript programming.</p>
+        </section>
+        <section class="main-section" id="Arrays">
+            <header>Arrays</header>
+            <p>Arrays are list-like objects used to store multiple values:</p>
+            <pre><code>const colors = ['red', 'green', 'blue'];
+console.log(colors[0]); // Outputs: red</code></pre>
+            <p>Arrays are useful for managing collections of data and support many built-in methods.</p>
+            <p>Understanding array methods such as <code>map</code>, <code>filter</code>, and <code>reduce</code> will improve your data manipulation skills.</p>
+        </section>
+        <section class="main-section" id="Best_Practices">
+            <header>Best Practices</header>
+            <p>Following best practices will help you write clean, efficient, and maintainable JavaScript code:</p>
+            <ul>
+                <li><span class="highlight">Use Descriptive Variable Names:</span> Choose clear, descriptive names for your variables and functions.</li>
+                <li><span class="highlight">Write Modular Code:</span> Break down your code into smaller, reusable functions and modules.</li>
+                <li><span class="highlight">Keep Your Code DRY:</span> Don’t Repeat Yourself. Reuse code and avoid duplication.</li>
+                <li><span class="highlight">Document Your Code:</span> Write comments and documentation to make your code understandable for others.</li>
+                <li><span class="highlight">Test Your Code:</span> Write tests to ensure your code works correctly and to catch bugs.</li>
+            </ul>
+            <p>Adhering to best practices will enhance the quality of your code and your development workflow.</p>
+        </section>
+        <section class="main-section" id="Resources">
+            <header>Resources</header>
+            <p>Here are some valuable resources for learning and improving your JavaScript skills:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs</a> - Comprehensive documentation on JavaScript.</li>
+                <li><a href="https://javascript.info/" target="_blank">JavaScript.info</a> - Modern tutorial on JavaScript.</li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript Tutorial</a> - Basic and advanced JavaScript tutorials.</li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> - Free coding lessons, including JavaScript.</li>
+                <li><a href="https://www.udemy.com/topic/javascript/" target="_blank">Udemy JavaScript Courses</a> - Various paid and free JavaScript courses.</li>
+            </ul>
+            <p>These resources cover a range of topics and difficulty levels for different learning needs.</p>
+        </section>
+        <section class="main-section" id="Examples">
+            <header>Examples</header>
+            <p>Here are some JavaScript code examples:</p>
+            <ul>
+                <li><span class="highlight">Example 1:</span> Basic Function</li>
+                <pre><code>function add(a, b) {
+    return a + b;
+}
+console.log(add(2, 3)); // Outputs: 5</code></pre>
+                <li><span class="highlight">Example 2:</span> Loop through an Array</li>
+                <pre><code>const numbers = [1, 2, 3, 4, 5];
+for (const num of numbers) {
+    console.log(num);
+}</code></pre>
+                <li><span class="highlight">Example 3:</span> Object and Method</li>
+                <pre><code>const car = {
+    make: 'Toyota',
+    model: 'Corolla',
+    start() {
+        console.log('Car started');
+    }
+};
+car.start(); // Outputs: Car started</code></pre>
+                <li><span class="highlight">Example 4:</span> Handling Events</li>
+                <pre><code>document.getElementById('myButton').addEventListener('click', () => {
+    alert('Button clicked!');
+});</code></pre>
+                <li><span class="highlight">Example 5:</span> Using Promises</li>
+                <pre><code>const fetchData = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve('Data fetched'), 1000);
+    });
+};
+fetchData().then(result => console.log(result)); // Outputs: Data fetched</code></pre>
+            </ul>
+            <p>These examples cover a range of JavaScript concepts and are useful for understanding how to apply JavaScript in different scenarios.</p>
+        </section>
+    </main>
+</body>
+</html>
