@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 
+    Verdana, 
+    Geneva, 
+    Tahoma, 
+    sans-serif;
+    background-color: #4338ca;
+    color: #eef2ff;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.palindrome-div {
+  margin-top: 25px;
+  background-color: white;
+  color: #0b0b0b;
+  width: min(100vw, 450px);
+  min-height: 100px;
+  box-shadow: 0 6px 6px #e02ead;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #c026d3;
+  height: 30px;
+  width: 250px;
+  margin: 10px 5px;
+}
+
+.results-div {
+  margin: 10px 5px;
+  text-align: center;
+}
+
+#check-btn {
+  background-color: #c026d3;
+  color: #fff;
+  width: 90px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 15px
+}
+
+.palindrome-def {
+  margin-top: 25px;
+  width: min(100vw, 450px);
+  height: 100px;
+  background-color: #14b8a6;
+  text-align : center;
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+
+.palindrome-def span {
+  font-style: italic;
+}
+
