@@ -1,0 +1,169 @@
+:root {
+  /* Color palette */
+  --gray-lightest: #f5f6f7;
+  --gray-light: #d0d0d5;
+  --gray-dark: #3b3b4f;
+  --gray-darker: #1b1b32;
+  --gray-darkest: #0a0a23;
+  --blue-light: #198eee;
+  --error: #a94442;
+  --danger-color: #e53e3e; /* More vibrant red */
+  --danger-background: #fee2e2; /* Softer red background */
+  
+  /* Font sizes */
+  --font-size-base: 18px;
+  --font-size-large: 23px;
+  --font-size-heading: 2.5em; /* Adjusted for improved readability */
+  --font-size-subheading: 2em;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: var(--font-size-base);
+  background-color: var(--gray-dark);
+  color: var(--gray-lightest);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+h1 {
+  margin: 20px 0; /* Reduced top margin for better alignment */
+  font-size: var(--font-size-heading);
+}
+
+h2 {
+  margin-bottom: 20px; /* Increased spacing below subheadings */
+  font-size: var(--font-size-subheading);
+}
+
+form {
+  width: 100%;
+  max-width: 600px; /* Adjusted for a better maximum width */
+  text-align: center;
+  padding: 20px;
+  background-color: var(--gray-lightest); /* Added background color for contrast */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+fieldset div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bracket,
+.comma {
+  font-size: 2.5em; /* Increased size for better visibility */
+  color: var(--gray-light); /* Match color scheme */
+}
+
+form .comma {
+  margin-left: 4px; /* Increased spacing for clarity */
+}
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  height: 40px; /* Slightly increased height for better usability */
+  width: 60px; /* Increased width for better appearance */
+  text-align: center;
+  border-radius: 4px; /* Rounded corners */
+  border: 1px solid var(--gray-light);
+  background-color: #ffffff; /* White background for clarity */
+}
+
+button {
+  cursor: pointer;
+  margin-top: 20px;
+  background-image: linear-gradient(135deg, #fcb045, #fd1d1d); /* Gradient for a modern look */
+  border: none; /* Removed border for cleaner design */
+  padding: 12px 20px; /* Adjusted padding for better button proportions */
+  font-size: var(--font-size-large);
+  color: #ffffff; /* White text color for contrast */
+  border-radius: 6px; /* Rounded corners for button */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+button:hover {
+  background-image: linear-gradient(135deg, #fd1d1d, #fcb045); /* Inverted gradient on hover */
+}
+
+button:focus-visible {
+  outline: 3px solid var(--blue-light);
+}
+
+.output-container {
+  width: 95%;
+  max-width: 600px; /* Adjusted for better maximum width */
+  min-height: 60px; /* Slightly increased height */
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--gray-lightest);
+  border: 1px solid var(--gray-dark);
+  border-radius: 8px;
+  overflow-wrap: break-word;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.output-array {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+}
+
+.output-value {
+  font-size: 2.2em; /* Slightly adjusted for visual balance */
+  color: var(--gray-dark); /* Consistent color scheme */
+}
+
+.alert {
+  background-color: var(--danger-background);
+  border: 2px solid var(--danger-color); /* Reduced border width for a lighter feel */
+  color: var(--danger-color);
+  padding: 10px;
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+/* Responsive adjustments */
+@media (min-width: 550px) {
+  form,
+  .output-container {
+    max-width: 480px;
+  }
+
+  fieldset {
+    max-width: 400px;
+  }
+
+  .output-array {
+    max-width: 420px;
+  }
+}
