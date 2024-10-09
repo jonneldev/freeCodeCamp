@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.phone-container {
+    margin-top: 23px;
+    background-color: black;
+    padding: 7px;
+    width: 350px;
+    height: 70vh;
+    border-radius: 15px;
+}
+
+.phone-background {
+    background-color: black;
+    height: 30px;
+    width: 50%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: auto;
+}
+
+.phone-camera {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.phone-screen-container {
+    background-color: white;
+    height: 100%;
+    border-radius: 12px;
+}
+
+label, input, button{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+}
+
+input {
+    margin-top: 5px;
+    border-radius: 5px;
+    width: calc(100% - 40px);
+    height: 35px;
+}
+
+button {
+    margin-top: 8px;
+    height: 35px;
+    width: calc(100% - 40px);
+}
+
+#results-div {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
